@@ -1,5 +1,3 @@
-# Create base image with dependencies
-# needed by both builder and final
 FROM debian:stretch
 
 RUN apt-get update && apt-get upgrade -y
