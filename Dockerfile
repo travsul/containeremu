@@ -14,12 +14,12 @@ RUN apt-get install -y build-essential \
 
 RUN apt-get install -y 
 
-RUN mkdir git
+RUN mkdir containeremu
 ADD . containeremu/
-WORKDIR git
+WORKDIR containeremu
 
 RUN cd Core3/MMOCoreORB && make -j8
 
-WORKDIR "/git/Core3/MMOCoreORB/bin"
+WORKDIR "/containeremu/Core3/MMOCoreORB/bin"
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 CMD ["./core3"] 
