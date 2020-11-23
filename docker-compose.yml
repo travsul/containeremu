@@ -41,7 +41,7 @@ services:
       - "44455:44455/udp"
       - "44460:44460"
     volumes:
-      - ./tre:/tres
+      - ./tres:/tres
       - ./conf:/containeremu/Core3/MMOCoreORB/bin/conf
       - ./custom_scripts:/containeremu/Core3/MMOCoreORB/bin/scripts/custom_scripts
     stop_grace_period: 1m
