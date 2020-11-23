@@ -41,8 +41,8 @@ services:
       - "44455:44455/udp"
       - "44460:44460"
     volumes:
-      - ./tre:/swgtres2
-      - ./conf:/git/Core3/MMOCoreORB/bin/conf
-      - ./custom_scripts:/git/Core3/MMOCoreORB/bin/scripts/custom_scripts
+      - ./tre:/tres
+      - ./conf:/containeremu/Core3/MMOCoreORB/bin/conf
+      - ./custom_scripts:/containeremu/Core3/MMOCoreORB/bin/scripts/custom_scripts
     stop_grace_period: 1m
     restart: always
